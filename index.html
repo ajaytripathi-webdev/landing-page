@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HS India - Women Ethnic Wear</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <img src="images/hs-logo-white.png" alt="HS India Logo">
+            </div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#offerings">Offerings</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-left" data-aos="fade-right">
+            </div>
+            <div class="hero-right" data-aos="fade-left">
+                <div class="form-card">
+                    <h2>Partner with <span style="color: #d70077;">HS India</span></h2>
+                    <p>Join our growing network of trusted fashion wholesalers across India. We offer exclusive designs, competitive margins, and full support for your business growth.</p>
+                    <form class="consultation-form" method="POST" action="submit_form.php">
+                        <div class="form-group-half">
+                            <div class="input-container">
+                                <input type="text" id="fullName" name="fullName" required placeholder=" ">
+                                <label for="fullName">Full Name</label>
+                            </div>
+                            <div class="input-container">
+                                <input type="email" id="emailAddress" name="emailAddress" required placeholder=" ">
+                                <label for="emailAddress">Email Address</label>
+                            </div>
+                        </div>
+                        <div class="form-group-half">
+                            <div class="input-container">
+                                <input type="text" id="phoneNumber" name="phoneNumber" required placeholder=" ">
+                                <label for="phoneNumber">Phone Number</label>
+                            </div>
+                            <div class="input-container">
+                                <input type="text" id="city" name="city" required placeholder=" ">
+                                <label for="city">City</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-container">
+                                <select id="natureOfBusiness" name="natureOfBusiness" required>
+                                    <option value=""></option>
+                                    <option value="high_street">High Street Store</option>
+                                    <option value="mall_store">Mall Store</option>
+                                    <option value="boutique">Boutique</option>
+                                    <option value="online_reselling">Online Reselling</option>
+                                    <option value="others">Others</option>
+                                </select>
+                                <label for="natureOfBusiness">Nature of Business</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-container">
+                                <select id="yearsInBusiness" name="yearsInBusiness" required>
+                                    <option value=""></option>
+                                    <option value="less_than_1">Less than 1 year</option>
+                                    <option value="1_3_years">1–3 years</option>
+                                    <option value="3_10_years">3–10 years</option>
+                                    <option value="more_than_10">More than 10 years</option>
+                                </select>
+                                <label for="yearsInBusiness">No. of Years in Business</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-container">
+                                <select id="storeSize" name="storeSize" required>
+                                    <option value=""></option>
+                                    <option value="less_than_1000">Less than 1000 sq.ft.</option>
+                                    <option value="1000_3000">1000–3000 sq.ft.</option>
+                                    <option value="more_than_3000">More than 3000 sq.ft.</option>
+                                </select>
+                                <label for="storeSize">Size of Store</label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn primary">Apply to Become a Partner</button>
+                    </form>
+                    <div class="thank-you-message" style="display: none;">
+                        <h3>Thank you for reaching out!</h3>
+                        <p>Our team will review your details and get in touch with you shortly to discuss a potential partnership with HS India.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 data-aos="fade-up">HS India – Where Elegance Meets Tradition</h2>
+            <div class="about-content" data-aos="fade-up" data-aos-delay="200">
+                <p>Rooted in heritage, HS India is a women's ethnic wear label that celebrates the beauty of Indian craftsmanship. We blend age-old techniques with modern silhouettes to create outfits that speak of grace, power, and identity.</p>
+                <p>Our collections are thoughtfully designed with premium fabrics, intricate embroidery, and exceptional attention to detail. Because we believe every woman deserves to feel like royalty.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offerings Section -->
+    <section id="offerings" class="offerings">
+        <div class="container">
+            <h2 data-aos="fade-up">What We Offer</h2>
+            <div class="offerings-grid">
+                <div class="offering-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon-wrapper">
+                        <img src="images/dress.png" alt="Bridal Lehenga"/>
+                    </div>
+                    <h3>Bridal Lehengas</h3>
+                    <p>Step into your forever in a lehenga that captures more than just attention—it tells your story.</p>
+                </div>
+                <div class="offering-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="icon-wrapper">
+                        <img src="images/saree.png" alt="Designer Sarees"/>
+                    </div>
+                    <h3>Designer Sarees</h3>
+                    <p>From timeless Banarasi silks to contemporary organza drapes, our saree collection offers sophistication for every woman.</p>
+                </div>
+                <div class="offering-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="icon-wrapper">
+                        <img src="images/fashion.png" alt="Festive & Partywear"/>
+                    </div>
+                    <h3>Festive & Partywear</h3>
+                    <p>Perfect for Diwali, Eid, Navratri, or a glamorous soirée—our pieces blend comfort with couture.</p>
+                </div>
+                <div class="offering-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="icon-wrapper">
+                        <img src="images/ladies-dress.png" alt="Festive & Partywear"/>
+                    </div>
+                    <h3>Custom Orders</h3>
+                    <p>Your vision, our creation. For clients who want something truly unique, we offer made-to-measure custom designs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+        <div class="container">
+            <h2 data-aos="fade-up">Why Choose HS India</h2>
+            <ul class="features-list">
+                <li data-aos="fade-up" data-aos-delay="100">
+                    Heritage Meets Innovation
+                </li>
+                <li data-aos="fade-up" data-aos-delay="200">
+                    Unmatched Craftsmanship
+                </li>
+                <li data-aos="fade-up" data-aos-delay="300">
+                    Curated Collections for Every Occasion
+                </li>
+                <li data-aos="fade-up" data-aos-delay="400">
+                    Customization & Personal Attention
+                </li>
+                <li data-aos="fade-up" data-aos-delay="500">
+                    Trusted by Retailers Across India
+                </li>
+                <li data-aos="fade-up" data-aos-delay="600">
+                    Ethical, Sustainable, Responsible
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 data-aos="fade-up">Client Testimonials</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <p>"HS India made my wedding day unforgettable. Their lehenga was everything I dreamed of."</p>
+                    <cite>— Neha M., Mumbai</cite>
+                </div>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                    <p>"The detailing and quality were just wow. Totally worth it!"</p>
+                    <cite>— Riya S., Delhi</cite>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 data-aos="fade-up">Let's Make Your Dream Outfit</h2>
+            <div class="contact-content" data-aos="fade-up" data-aos-delay="200">
+                <p>Have a vision for your perfect ethnic wear? Let's bring it to life. Our team will guide you from consultation to final fitting with care and creativity.</p>
+                <div class="contact-buttons">
+                    <a href="#" class="btn primary">Send Us a Message</a>
+                    <a href="#" class="btn secondary">Schedule a Call</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2024 HS India. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Thank You Popup -->
+    <div class="popup-overlay"></div>
+    <div class="thank-you-popup">
+        <h3>Thank You!</h3>
+        <p>Your application has been submitted successfully. Our team will review your details and get in touch with you shortly.</p>
+        <button class="close-popup">Close</button>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
