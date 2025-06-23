@@ -301,4 +301,41 @@ if (form) {
             alert('Error submitting form. Please try again.');
         }
     });
-} 
+}
+
+// About section Read More/Read Less toggle (mobile only)
+document.addEventListener('DOMContentLoaded', function () {
+    const aboutContent = document.querySelector('.about-content');
+    if (!aboutContent) return;
+    const p2 = aboutContent.querySelector('.about-p2');
+    const btn = aboutContent.querySelector('.about-toggle-btn');
+    if (!p2 || !btn) return;
+
+    function isMobile() {
+        return window.innerWidth <= 768;
+    }
+
+    function updateVisibility() {
+        if (isMobile()) {
+            p2.style.display = 'none';
+            btn.style.display = 'inline-block';
+            btn.textContent = 'Read More';
+        } else {
+            p2.style.display = '';
+            btn.style.display = 'none';
+        }
+    }
+
+    updateVisibility();
+    window.addEventListener('resize', updateVisibility);
+
+    btn.addEventListener('click', function () {
+        if (p2.style.display === 'none') {
+            p2.style.display = 'block';
+            btn.textContent = 'Read Less';
+        } else {
+            p2.style.display = 'none';
+            btn.textContent = 'Read More';
+        }
+    });
+}); 

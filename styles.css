@@ -164,11 +164,10 @@ h1 {
     justify-content: center;
     text-align: left;
     max-width: 60%;
-    background: url('images/hero-bg.jpg');
-    background-size: cover;
-    background-position: center;
     color: var(--white);
     position: relative;
+    background: none;
+    padding: 0;
 }
 
 .hero-left .logo img {
@@ -409,7 +408,7 @@ section h2:hover::after {
 
 .about .container {
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
 .about-content {
@@ -451,6 +450,28 @@ section h2:hover::after {
 
 .offering-card p{
     font-size: 0.9rem;
+}
+
+.offering-card .icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.offering-card .icon-wrapper i {
+    font-size: 2.8rem;
+    color: var(--primary);
+    background: var(--gray);
+    border-radius: 50%;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(215,0,119,0.08);
+    transition: background 0.3s, color 0.3s;
+}
+
+.offering-card:hover .icon-wrapper i {
+    background: var(--primary);
+    color: var(--white);
 }
 
 /* Why Choose Us Section */
@@ -546,6 +567,18 @@ section h2:hover::after {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    position: relative;
+}
+
+.black-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3); /* subtle black overlay */
+    z-index: 0;
+    pointer-events: none;
 }
 
 .contact-content {
@@ -782,10 +815,9 @@ select.error:focus {
     .hero-left {
         max-width: 100%;
         text-align: center;
-        padding: 4rem 20px;
-        height: 50vh;
-        background-position: center bottom;
         align-items: center;
+        height: 200px;
+        padding: 0;
     }
 
     .hero-left .logo img {
@@ -832,7 +864,7 @@ select.error:focus {
     }
 
     .hero-container{
-        flex-direction: row;
+        flex-direction: column;
     }
 
     .mobile-menu {
@@ -840,9 +872,12 @@ select.error:focus {
     }
 
     .hero-left {
-        /* background-image: url('images/hero-bg-mobile.jpg'); */
-        display: none;
-        height: 100vh;
+        height: 200px;
+        padding: 0;
+    }
+
+    .hero-left .hero-img-mobile {
+        display: block;
     }
 
     .hero-right{
@@ -884,5 +919,55 @@ select.error:focus {
     }
     .consultation-form input:last-child, .form-group-half input:last-child {
         margin-bottom: 0;
+    }
+
+    /* About section read more/less */
+    .about-content .about-p2 {
+        display: none;
+    }
+    .about-content .about-toggle-btn {
+        display: inline-block !important;
+        background: transparent;
+        border: none;
+        font-family: 'Montserrat';
+        font-size: 1.1rem;
+        color: #b3005f;
+    }
+}
+
+.hero-left .hero-img-mobile {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .hero-left {
+        background-image: none;
+        height: auto;
+        padding: 0;
+    }
+    .hero-left .hero-img-mobile {
+        display: block;
+    }
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    .hero-left {
+        height: 300px;
+    }
+    .hero-img {
+        height: 300px;
+    }
+    .hero-right {
+        padding: 2rem 1rem;
     }
 }
